@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+         
+		<changeSet author="fastCode, Inc" id="project100">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="project" schemaName="timesheet"/>
+        </preConditions>
+	    <addColumn tableName="project">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="fastCode, Inc" id="task101">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="task" schemaName="timesheet"/>
+        </preConditions>
+	    <addColumn tableName="task">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="fastCode, Inc" id="timeofftype102">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="timeofftype" schemaName="timesheet"/>
+        </preConditions>
+	    <addColumn tableName="timeofftype">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="fastCode, Inc" id="customer103">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="customer" schemaName="timesheet"/>
+        </preConditions>
+	    <addColumn tableName="customer">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="fastCode, Inc" id="usertask104">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="usertask" schemaName="timesheet"/>
+        </preConditions>
+	    <addColumn tableName="usertask">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="fastCode, Inc" id="timesheet105">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="timesheet" schemaName="timesheet"/>
+        </preConditions>
+	    <addColumn tableName="timesheet">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="fastCode, Inc" id="timesheetstatus106">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="timesheetstatus" schemaName="timesheet"/>
+        </preConditions>
+	    <addColumn tableName="timesheetstatus">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="fastCode, Inc" id="users107">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="users" schemaName="timesheet"/>
+        </preConditions>
+	    <addColumn tableName="users">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="fastCode, Inc" id="timesheetdetails108">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="timesheetdetails" schemaName="timesheet"/>
+        </preConditions>
+	    <addColumn tableName="timesheetdetails">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+         
+</databaseChangeLog>
